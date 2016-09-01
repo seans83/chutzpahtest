@@ -1,0 +1,24 @@
+﻿{
+  "Framework": "jasmine",
+  "Compile": {
+    "Mode": "External",
+    "Extensions": [ ".ts" ],
+    "ExtensionsWithNoOutput": [ ".d.ts" ]
+  },
+  "TestFileTimeout": 60000,
+  "References": [
+    { "Path": "scripts/jquery-2.1.4.js" },
+    {
+      "Includes": [
+        "*/object/object.ts"
+      ]
+    }
+  ],
+  "Tests": [
+    {
+      "Path": "tests",
+      "Includes": [ "*.test.ts*" ],
+      "Excludes": [ "*.js*" ]
+    }
+  ]
+}
